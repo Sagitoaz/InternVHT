@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17">
+  <diagram id="class-diagram.drawio" name="Class diagram — Cấu trúc các lớp chính">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="2500" pageHeight="2490" guides="1" connect="1" arrows="1" fold="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="Class diagram — Cấu trúc các lớp chính" parent="1" vertex="1" style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=26;fontStyle=1;align=left;verticalAlign=middle;spacing=4;">
+          <mxGeometry as="geometry" x="35" y="20" width="2430" height="45" />
+        </mxCell>
+        <mxCell id="c3" value="Ba ngăn: tên lớp / thuộc tính / phương thức. Tên và chữ ký lấy từ src/concurrent; lược bỏ constructor và getter thông thường." parent="1" vertex="1" style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=17;fontStyle=0;align=left;verticalAlign=middle;spacing=4;">
+          <mxGeometry as="geometry" x="35" y="70" width="2430" height="35" />
+        </mxCell>
+        <mxCell id="c4" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="100" y="150" width="330" height="133" />
+        </mxCell>
+        <mxCell id="c5" value="&lt;b&gt;Main&lt;/b&gt;" parent="c4" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="330" height="55" />
+        </mxCell>
+        <mxCell id="c6" value="" parent="c4" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="330" height="38" />
+        </mxCell>
+        <mxCell id="c7" value="&lt;u&gt;+ main(args: String[]): void&lt;/u&gt;" parent="c4" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="93" width="330" height="40" />
+        </mxCell>
+        <mxCell id="c8" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="100" y="420" width="330" height="225" />
+        </mxCell>
+        <mxCell id="c9" value="&lt;b&gt;CliArgs&lt;/b&gt;" parent="c8" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="330" height="55" />
+        </mxCell>
+        <mxCell id="c10" value="- processMode: ProcessMode&lt;br&gt;- threadCount: int&lt;br&gt;- file: String&lt;br&gt;- writeMode: WriteMode = NONE&lt;br&gt;- out: String = &amp;quot;&amp;quot;" parent="c8" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="330" height="130" />
+        </mxCell>
+        <mxCell id="c11" value="&lt;u&gt;+ parse(args: String[]): CliArgs&lt;/u&gt;" parent="c8" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="185" width="330" height="40" />
+        </mxCell>
+        <mxCell id="c12" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="100" y="840" width="330" height="223" />
+        </mxCell>
+        <mxCell id="c13" value="«enumeration»&lt;br&gt;&lt;b&gt;ProcessMode&lt;/b&gt;" parent="c12" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="330" height="55" />
+        </mxCell>
+        <mxCell id="c14" value="BUFFERED, UNBUFFERED, QUEUE&lt;br&gt;EXECUTOR, VIRTUAL&lt;br&gt;- processName: String&lt;br&gt;- processorFactory: ProcessorFactory" parent="c12" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="330" height="107" />
+        </mxCell>
+        <mxCell id="c15" value="+ createProcess(threadCount: int,&lt;br&gt;  writer: RecordWriter): Processor" parent="c12" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="162" width="330" height="61" />
+        </mxCell>
+        <mxCell id="c16" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="100" y="1300" width="330" height="156" />
+        </mxCell>
+        <mxCell id="c17" value="«enumeration»&lt;br&gt;&lt;b&gt;WriteMode&lt;/b&gt;" parent="c16" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="330" height="55" />
+        </mxCell>
+        <mxCell id="c18" value="NONE, UNSAFE&lt;br&gt;SYNCHRONIZE, REENTRANT_LOCK" parent="c16" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="330" height="61" />
+        </mxCell>
+        <mxCell id="c19" value="+ createWriter(out: String): RecordWriter" parent="c16" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="116" width="330" height="40" />
+        </mxCell>
+        <mxCell id="c20" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="100" y="1730" width="330" height="154" />
+        </mxCell>
+        <mxCell id="c21" value="&lt;b&gt;HashMapCounter&lt;/b&gt;" parent="c20" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="330" height="55" />
+        </mxCell>
+        <mxCell id="c22" value="- counter: Map&amp;lt;String, Long&amp;gt;" parent="c20" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="330" height="38" />
+        </mxCell>
+        <mxCell id="c23" value="+ increase(word: String): void&lt;br&gt;+ getCount(): Map&amp;lt;String, Long&amp;gt;" parent="c20" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="93" width="330" height="61" />
+        </mxCell>
+        <mxCell id="c24" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="650" y="150" width="420" height="200" />
+        </mxCell>
+        <mxCell id="c25" value="&lt;b&gt;Runner&lt;/b&gt;" parent="c24" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="420" height="55" />
+        </mxCell>
+        <mxCell id="c26" value="- result: BenchmarkResult&lt;br&gt;- threadCount: int&lt;br&gt;- processName: String" parent="c24" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="420" height="84" />
+        </mxCell>
+        <mxCell id="c27" value="+ run(processor: Processor, file: String): void&lt;br&gt;+ getResult(): BenchmarkResult" parent="c24" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="139" width="420" height="61" />
+        </mxCell>
+        <mxCell id="c28" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="1170" y="150" width="420" height="202" />
+        </mxCell>
+        <mxCell id="c29" value="«record»&lt;br&gt;&lt;b&gt;BenchmarkResult&lt;/b&gt;" parent="c28" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e7f3e8;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="420" height="55" />
+        </mxCell>
+        <mxCell id="c30" value="- seqProcessResult: ProcessResult&lt;br&gt;- processTime: long&lt;br&gt;- threadCount: int&lt;br&gt;- processName: String" parent="c28" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="420" height="107" />
+        </mxCell>
+        <mxCell id="c31" value="" parent="c28" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="162" width="420" height="40" />
+        </mxCell>
+        <mxCell id="c32" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="650" y="515" width="420" height="223" />
+        </mxCell>
+        <mxCell id="c33" value="&lt;i&gt;&lt;b&gt;Processor&lt;/b&gt;&lt;/i&gt;" parent="c32" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="420" height="55" />
+        </mxCell>
+        <mxCell id="c34" value="- wordCount: long&lt;br&gt;- lineCount: long&lt;br&gt;# result: ProcessResult" parent="c32" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="420" height="84" />
+        </mxCell>
+        <mxCell id="c35" value="&lt;i&gt;+ process(file: String): void&lt;/i&gt;&lt;br&gt;+ getResult(): ProcessResult&lt;br&gt;# createResult(words: long, lines: long): void" parent="c32" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="139" width="420" height="84" />
+        </mxCell>
+        <mxCell id="c36" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="1170" y="550" width="420" height="156" />
+        </mxCell>
+        <mxCell id="c37" value="«record»&lt;br&gt;&lt;b&gt;ProcessResult&lt;/b&gt;" parent="c36" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e7f3e8;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="420" height="55" />
+        </mxCell>
+        <mxCell id="c38" value="- lineCount: long&lt;br&gt;- wordCount: long" parent="c36" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="420" height="61" />
+        </mxCell>
+        <mxCell id="c39" value="" parent="c36" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="116" width="420" height="40" />
+        </mxCell>
+        <mxCell id="c40" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="550" y="920" width="350" height="133" />
+        </mxCell>
+        <mxCell id="c41" value="&lt;b&gt;SeqBufProcessor&lt;/b&gt;" parent="c40" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="350" height="55" />
+        </mxCell>
+        <mxCell id="c42" value="- counter: HashMapCounter" parent="c40" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="350" height="38" />
+        </mxCell>
+        <mxCell id="c43" value="+ process(file: String): void" parent="c40" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="93" width="350" height="40" />
+        </mxCell>
+        <mxCell id="c44" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="950" y="920" width="350" height="133" />
+        </mxCell>
+        <mxCell id="c45" value="&lt;b&gt;SeqUnbufProcessor&lt;/b&gt;" parent="c44" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="350" height="55" />
+        </mxCell>
+        <mxCell id="c46" value="- counter: HashMapCounter" parent="c44" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="350" height="38" />
+        </mxCell>
+        <mxCell id="c47" value="+ process(file: String): void" parent="c44" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="93" width="350" height="40" />
+        </mxCell>
+        <mxCell id="c48" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="1350" y="920" width="350" height="179" />
+        </mxCell>
+        <mxCell id="c49" value="&lt;b&gt;BlockingQueueProcessor&lt;/b&gt;" parent="c48" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="350" height="55" />
+        </mxCell>
+        <mxCell id="c50" value="- workerCount: int&lt;br&gt;- writer: RecordWriter&lt;br&gt;- queue: BlockingQueue&amp;lt;FileRecord&amp;gt;" parent="c48" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="350" height="84" />
+        </mxCell>
+        <mxCell id="c51" value="+ process(file: String): void" parent="c48" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="139" width="350" height="40" />
+        </mxCell>
+        <mxCell id="c52" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="550" y="1270" width="350" height="179" />
+        </mxCell>
+        <mxCell id="c53" value="&lt;b&gt;ExecutorQueueProcessor&lt;/b&gt;" parent="c52" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="350" height="55" />
+        </mxCell>
+        <mxCell id="c54" value="- workerCount: int&lt;br&gt;- writer: RecordWriter&lt;br&gt;- queue: BlockingQueue&amp;lt;FileRecord&amp;gt;" parent="c52" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="350" height="84" />
+        </mxCell>
+        <mxCell id="c55" value="+ process(file: String): void" parent="c52" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="139" width="350" height="40" />
+        </mxCell>
+        <mxCell id="c56" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="950" y="1270" width="350" height="156" />
+        </mxCell>
+        <mxCell id="c57" value="&lt;b&gt;VirtualThreadProcessor&lt;/b&gt;" parent="c56" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="350" height="55" />
+        </mxCell>
+        <mxCell id="c58" value="- workerCount: int&lt;br&gt;- writer: RecordWriter" parent="c56" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="350" height="61" />
+        </mxCell>
+        <mxCell id="c59" value="+ process(file: String): void" parent="c56" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="116" width="350" height="40" />
+        </mxCell>
+        <mxCell id="c60" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="550" y="1640" width="350" height="156" />
+        </mxCell>
+        <mxCell id="c61" value="&lt;b&gt;RecordProducer&lt;/b&gt;" parent="c60" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="350" height="55" />
+        </mxCell>
+        <mxCell id="c62" value="- queue: BlockingQueue&amp;lt;FileRecord&amp;gt;&lt;br&gt;- file: String" parent="c60" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="350" height="61" />
+        </mxCell>
+        <mxCell id="c63" value="+ run(): void" parent="c60" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="116" width="350" height="40" />
+        </mxCell>
+        <mxCell id="c64" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="1020" y="1640" width="490" height="269" />
+        </mxCell>
+        <mxCell id="c65" value="&lt;b&gt;RecordConsumer&lt;/b&gt;" parent="c64" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="490" height="55" />
+        </mxCell>
+        <mxCell id="c66" value="- queue: BlockingQueue&amp;lt;FileRecord&amp;gt;&lt;br&gt;- writer: RecordWriter&lt;br&gt;- wordCount: long&lt;br&gt;- processCount: long" parent="c64" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="490" height="107" />
+        </mxCell>
+        <mxCell id="c67" value="+ run(): void&lt;br&gt;- process(record: FileRecord): ProcessedRecord&lt;br&gt;+ getProcessCount(): long&lt;br&gt;+ getWordCount(): long" parent="c64" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="162" width="490" height="107" />
+        </mxCell>
+        <mxCell id="c68" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="550" y="2080" width="350" height="179" />
+        </mxCell>
+        <mxCell id="c69" value="«record»&lt;br&gt;&lt;b&gt;FileRecord&lt;/b&gt;" parent="c68" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e7f3e8;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="350" height="55" />
+        </mxCell>
+        <mxCell id="c70" value="- id: long&lt;br&gt;- originalText: String&lt;br&gt;&lt;u&gt;+ POISION_PILL: FileRecord = (-1, &quot;&quot;)&lt;/u&gt;" parent="c68" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="350" height="84" />
+        </mxCell>
+        <mxCell id="c71" value="" parent="c68" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="139" width="350" height="40" />
+        </mxCell>
+        <mxCell id="c72" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="1020" y="2070" width="490" height="248" />
+        </mxCell>
+        <mxCell id="c73" value="«record»&lt;br&gt;&lt;b&gt;ProcessedRecord&lt;/b&gt;" parent="c72" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e7f3e8;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="490" height="55" />
+        </mxCell>
+        <mxCell id="c74" value="- id: long&lt;br&gt;- originalText: String&lt;br&gt;- modifiedText: String&lt;br&gt;- wordCount: int&lt;br&gt;- processedBy: String&lt;br&gt;- virtualThread: boolean" parent="c72" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="490" height="153" />
+        </mxCell>
+        <mxCell id="c75" value="" parent="c72" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="208" width="490" height="40" />
+        </mxCell>
+        <mxCell id="c76" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="1870" y="150" width="520" height="154" />
+        </mxCell>
+        <mxCell id="c77" value="«interface»&lt;br&gt;&lt;b&gt;RecordWriter&lt;/b&gt;" parent="c76" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e7f3e8;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="520" height="55" />
+        </mxCell>
+        <mxCell id="c78" value="" parent="c76" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="520" height="38" />
+        </mxCell>
+        <mxCell id="c79" value="+ write(record: ProcessedRecord): void&lt;br&gt;+ close(): void" parent="c76" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="93" width="520" height="61" />
+        </mxCell>
+        <mxCell id="c80" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="1870" y="630" width="520" height="154" />
+        </mxCell>
+        <mxCell id="c81" value="«interface»&lt;br&gt;&lt;b&gt;ResultWriter&lt;/b&gt;" parent="c80" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e7f3e8;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="520" height="55" />
+        </mxCell>
+        <mxCell id="c82" value="" parent="c80" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="520" height="38" />
+        </mxCell>
+        <mxCell id="c83" value="+ write(result: BenchmarkResult, message: String): void&lt;br&gt;+ write(result: BenchmarkResult): void {default}" parent="c80" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="93" width="520" height="61" />
+        </mxCell>
+        <mxCell id="c84" value="" parent="1" vertex="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#334155;container=1;collapsible=0;recursiveResize=0;">
+          <mxGeometry as="geometry" x="1870" y="1030" width="520" height="133" />
+        </mxCell>
+        <mxCell id="c85" value="&lt;b&gt;BufferedResultWriter&lt;/b&gt;" parent="c84" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f0fe;strokeColor=#334155;fontSize=16;align=center;">
+          <mxGeometry as="geometry" x="0" y="0" width="520" height="55" />
+        </mxCell>
+        <mxCell id="c86" value="- out: String" parent="c84" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="55" width="520" height="38" />
+        </mxCell>
+        <mxCell id="c87" value="+ write(result: BenchmarkResult, message: String): void" parent="c84" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#334155;fontSize=14;align=left;verticalAlign=middle;spacing=10;">
+          <mxGeometry as="geometry" x="0" y="93" width="520" height="40" />
+        </mxCell>
+        <mxCell id="c88" parent="1" source="c4" target="c8" value="«use» parse" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c89" parent="1" source="c4" target="c24" value="«create» / run" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c90" parent="1" source="c8" target="c12" value="processMode 1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=none;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c91" parent="1" source="c8" target="c16" value="writeMode 1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=none;exitX=0;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="60" y="560" />
+              <mxPoint x="60" y="1370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c92" parent="1" source="c24" target="c32" value="«use» process" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c93" parent="1" source="c24" target="c28" value="result 0..1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=none;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c94" parent="1" source="c28" target="c36" value="seqProcessResult 0..1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=none;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c95" parent="1" source="c32" target="c36" value="result 0..1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=none;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c96" parent="1" source="c40" target="c32" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;endSize=18;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeWidth=3;strokeColor=#0f172a;endSize=22;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="725" y="860" />
+              <mxPoint x="860" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c97" parent="1" source="c44" target="c32" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;endSize=18;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeWidth=3;strokeColor=#0f172a;endSize=22;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1125" y="860" />
+              <mxPoint x="860" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c98" parent="1" source="c48" target="c32" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;endSize=18;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeWidth=3;strokeColor=#0f172a;endSize=22;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1525" y="860" />
+              <mxPoint x="860" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c99" parent="1" source="c52" target="c32" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;endSize=18;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeWidth=3;strokeColor=#0f172a;endSize=22;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="725" y="1220" />
+              <mxPoint x="510" y="1220" />
+              <mxPoint x="510" y="860" />
+              <mxPoint x="860" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c100" parent="1" source="c56" target="c32" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;endSize=18;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeWidth=3;strokeColor=#0f172a;endSize=22;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1125" y="1220" />
+              <mxPoint x="1320" y="1220" />
+              <mxPoint x="1320" y="860" />
+              <mxPoint x="860" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c101" parent="1" source="c40" target="c20" value="counter 1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;startArrow=diamond;startFill=1;startSize=16;endArrow=none;exitX=0;exitY=0.5;entryX=1;entryY=0.4;strokeWidth=3;strokeColor=#0f172a;startSize=20;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="465" y="995" />
+              <mxPoint x="465" y="1800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c102" parent="1" source="c44" target="c20" value="counter 1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;startArrow=diamond;startFill=1;startSize=16;endArrow=none;exitX=0.5;exitY=1;entryX=1;entryY=0.8;strokeWidth=3;strokeColor=#0f172a;startSize=20;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1125" y="1190" />
+              <mxPoint x="485" y="1190" />
+              <mxPoint x="485" y="1860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c103" parent="1" source="c60" target="c68" value="«create»" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c104" parent="1" source="c64" target="c72" value="«create»" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c105" parent="1" source="c64" target="c76" value="writer 1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;endArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=1;strokeWidth=3;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1830" y="1800" />
+              <mxPoint x="1830" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c106" parent="1" source="c84" target="c80" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;dashed=1;endArrow=block;endFill=0;endSize=18;strokeWidth=3;strokeColor=#0f172a;endSize=22;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c107" value="RecordWriter được triển khai bởi:&lt;br&gt;• NoOpsRecordWriter — không ghi&lt;br&gt;• UnsafeRecordWriter — không khóa toàn record&lt;br&gt;• SynchronizedRecordWriter — synchronized&lt;br&gt;• LockRecordWriter — ReentrantLock&lt;br&gt;Các lớp này được lược khỏi hình để tránh dày sơ đồ." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff6d5;strokeColor=#b59b49;fontSize=15;align=left;spacing=12;">
+          <mxGeometry as="geometry" x="1870" y="400" width="520" height="180" />
+        </mxCell>
+        <mxCell id="c108" parent="1" source="c107" target="c76" value="" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#334155;fontSize=14;labelBackgroundColor=#ffffff;dashed=1;endArrow=none;strokeWidth=2;strokeColor=#0f172a;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="c109" value="Pipeline ở 3 mode đồng thời:&lt;br&gt;Tạo 1 RecordProducer và N RecordConsumer.&lt;br&gt;Hai bên giữ cùng queue ArrayBlockingQueue(1000).&lt;br&gt;Producer và consumer implements Runnable (JDK).&lt;br&gt;BUFFERED/UNBUFFERED chỉ đếm; không dùng writer.&lt;br&gt;Lược bỏ dependency tạo worker để đường nối rõ hơn." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff6d5;strokeColor=#b59b49;fontSize=15;align=left;spacing=12;">
+          <mxGeometry as="geometry" x="1870" y="1350" width="520" height="175" />
+        </mxCell>
+        <mxCell id="c110" value="Ký hiệu UML&lt;br&gt;+ public; - private; # protected&lt;br&gt;Gạch chân: static; chữ nghiêng: abstract&lt;br&gt;Tam giác rỗng nét liền: generalization (extends)&lt;br&gt;Tam giác rỗng nét đứt: realization (implements)&lt;br&gt;Nét liền: association; số ở nhãn là multiplicity&lt;br&gt;Thoi đặc phía chủ sở hữu: composition&lt;br&gt;Nét đứt mũi tên mở: dependency&lt;br&gt;«record»: trường private final; accessor sinh tự động." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff6d5;strokeColor=#b59b49;fontSize=15;align=left;spacing=12;">
+          <mxGeometry as="geometry" x="1870" y="1640" width="520" height="280" />
+        </mxCell>
+        <mxCell id="c111" value="Phạm vi: cấu trúc chính, không liệt kê mọi getter/constructor. Các lớp phụ ProcessorFactory, WordCounter, WriteHelper và writer khác giữ nguyên trong source.&lt;br&gt;LargeFileGenerator sinh dữ liệu thử; lời gọi Main.genFile() hiện bị comment.&lt;br&gt;Lỗi source: cả 3 processor đồng thời gọi createResult(totalRecords, totalWords) — đảo ý nghĩa tham số, dẫn đến báo cáo đảo số dòng/từ." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff6d5;strokeColor=#b59b49;fontSize=15;align=left;spacing=12;">
+          <mxGeometry as="geometry" x="80" y="2380" width="2310" height="90" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
